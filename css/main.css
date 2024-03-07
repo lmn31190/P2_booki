@@ -108,6 +108,7 @@
     background-color: transparent;
     border: 1.5px solid var(--main-bg-color);
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .filters button:hover {
@@ -175,6 +176,32 @@ p.info i{
     width: 65%;
 }
 
+.hebergements-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hebergements-card .card{
+    flex-direction: column;
+}
+
+.hebergements-card img {
+    width: 250.33px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-card .card-content {
+    width: unset !important;
+}
+
+.hebergements .see-more {
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -186,10 +213,12 @@ p.info i{
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cards .card, .hebergements-card .card {
     display: flex;
     margin-top: 33px;
 }
+
+
 
 .populaires-cards img {
     width: 33%;
@@ -198,7 +227,7 @@ p.info i{
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires-cards .card-content, .hebergements-card .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -207,17 +236,53 @@ p.info i{
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards .card-title, .hebergements-card .card-title{
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-subtitle, .hebergements-card .card-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-cards .card-rating, .hebergements-card .card-rating {
     margin-bottom: 5px;
 }
 
 /* /POPULAIRE */
+
+/* ACTIVITÉ */
+
+.activites{
+    margin-top: 35px;
+    padding: 30px;
+}
+
+.activites > h3{
+    padding-bottom: 35px;
+}
+
+.activites-container, .activites .section-title{
+    margin: auto;
+} 
+
+.activites-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-container .card {
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.activites-container img {
+    width: 279.5px;
+    height: 380px;
+}
+
+.activites-container .card-txt{
+    padding: 0 15px;
+}
+/* /ACTIVITÉ */
