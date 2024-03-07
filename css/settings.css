@@ -1,4 +1,8 @@
 /****** General ***********/
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
 }
