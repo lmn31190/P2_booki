@@ -256,6 +256,7 @@ p.info i{
 .activites{
     margin-top: 35px;
     padding: 30px;
+    margin-bottom: 35px;
 }
 
 .activites > h3{
@@ -286,3 +287,22 @@ p.info i{
     padding: 0 15px;
 }
 /* /ACTIVITÉ */
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 0 30px;
+    margin-top: 35px;
+}
+
+.about, .hebergement, .help{
+    flex: 1;
+}
+
+.about p, .hebergement p, .help p {
+    cursor: pointer;
+}
+/* /FOOTER */
