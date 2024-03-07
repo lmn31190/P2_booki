@@ -3,39 +3,100 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
 
-    .hebergements {
-        width: 100%;
-    }
+  .hebergements {
+    width: 100%;
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+  .populaires-cards a {
+    width: 30%;
+  }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+
+  .activites-container {
+    flex-wrap: wrap;
+  }
+
+  .activites-container .card {
+    max-width: 193.5px;
+    height: 270px;
+  }
+
+  .activites-container img {
+    width: 193.5px;
+    height: 200px;
+  }
+
+  .activites .card-txt h3 {
+    font-size: 14px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+  body {
+    max-width: unset;
+  }
+
+  .main-container {
+    padding: 0;
+  }
+
+  .navBar {
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 35px;
+  }
+
+  .navBar ul {
+    padding: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navBar li {
+    text-align: center;
+  }
+
+  .navBar li:nth-child(1) {
+    flex: 1;
+    border-bottom: 3px solid var(--main-color);
+    border-top: unset;
+  }
+
+  .navBar li:nth-child(2) {
+    border-bottom: 3px solid #F2F2F2;
+    flex: 1;
+    line-height: 40px;
+  }
+
+  .header-text-container{
+    width: 70%;
+  }
+
+  .filters{
+    flex-direction: column;
+  }
 }
