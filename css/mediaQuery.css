@@ -175,6 +175,10 @@
     flex-direction: column;
   }
 
+  .activites-container a{
+    border-radius: 20px;
+  }
+
   .activites-container .card {
     max-width: unset !important;
     overflow: hidden;
