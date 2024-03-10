@@ -177,6 +177,7 @@
 
   .activites-container .card {
     max-width: unset !important;
+    overflow: hidden;
   }
 
   .activites-container img {
