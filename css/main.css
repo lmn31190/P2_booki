@@ -18,18 +18,22 @@
   gap: 50px;
 }
 
+.navBar ul:hover li:not(:hover){
+    color: unset !important;
+    border-top: unset;
+}
+
 .navBar li {
   line-height: 40px;
 }
 
-.navBar li:nth-child(1) {
+.navBar li:nth-child(1), .navBar li:hover {
   color: var(--main-color);
   border-top: 3px solid var(--main-color);
 }
 
-.navBar li:nth-child(2) {
-  line-height: 43px;
-}
+
+
 
 .navBar img {
   width: 61.09px;
