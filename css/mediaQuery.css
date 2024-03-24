@@ -63,6 +63,7 @@
     padding: 0;
   }
 
+  /* Passage NavBar en colonne */
   .navBar {
     margin-top: 25px;
     flex-direction: column;
@@ -79,7 +80,7 @@
   .navBar li {
     text-align: center;
   }
-
+/* Border-bottom effet sur Hover */
   .navBar li:nth-child(1), .navBar li:nth-child(2) {
     flex: 1;
     border-top: unset !important;
@@ -139,6 +140,10 @@
     flex-direction: column;
   }
 
+  /* Bouton filter 2x2, utilisation du grid */
+  .filters .btn-container .filters-btn{
+    font-size: 15px;
+  }
   .filters .btn-container {
     flex-wrap: wrap;
     display: grid;
@@ -193,6 +198,7 @@
     width: 100%;
   }
 
+  /* Passage du footer en colonne */
   footer {
     flex-direction: column;
     align-items: start;
