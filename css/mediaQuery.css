@@ -80,18 +80,22 @@
     text-align: center;
   }
 
-  .navBar li:nth-child(1) {
+  .navBar li:nth-child(1), .navBar li:nth-child(2) {
     flex: 1;
+    border-top: unset !important;
+  }
+
+  .navBar li:nth-child(1), .navBar ul:hover li:hover {
     border-bottom: 3px solid var(--main-color);
-    border-top: unset;
   }
 
-  .navBar li:nth-child(2) {
+  .navBar ul:hover li:not(:hover), .navBar li:nth-child(2)  {
     border-bottom: 3px solid #f2f2f2;
-    flex: 1;
-    line-height: 40px;
   }
 
+  
+
+ 
   .header-text-container {
     width: 80%;
     margin: auto;
