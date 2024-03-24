@@ -3,16 +3,16 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /* Hébergement et Populaire en COLONNE*/
   .hebergements-and-populaires {
     flex-direction: column;
   }
 
-  .hebergements {
+  .hebergements, .populaires {
     width: 100%;
   }
 
   .populaires {
-    width: 100%;
     margin-top: 50px;
   }
 
@@ -55,10 +55,6 @@
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  body {
-    max-width: unset;
-  }
-
   .main-container {
     padding: 0;
   }
@@ -121,12 +117,13 @@
     padding: 15px;
   }
 
+  /* Boutton "recherche" none */
   .search button {
     display: none;
   }
-
+  /* Affichage Icon Loupe  */
   .search .search-btn {
-    display: inline;
+    display: block;
     background-color: var(--main-color);
     color: white;
     border-radius: 10px;
