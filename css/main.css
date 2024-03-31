@@ -305,7 +305,6 @@ p.info i {
 
 footer {
   display: flex;
-  align-items: center;
   background-color: #f2f2f2;
   padding: 0 30px;
   margin-top: 35px;
